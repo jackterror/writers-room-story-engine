@@ -1,10 +1,29 @@
-# Agent Boss Instructions
+---
+name: writers-room-story-engine
+description: Orchestrates modular story development by diagnosing the current phase and routing to the right story skill for foundations, worldbuilding, scene writing, or revision. Use when building a story from scratch, improving an outline, strengthening narrative structure, or guiding story development in staged workflows.
+---
 
-Use these instructions for the orchestration layer, supervisor agent, or boss agent that manages Writers Room Story Engine story generation.
+# Writers Room Story Engine
+
+Use this skill as the primary orchestration layer for Writers Room Story Engine.
+
+Its job is to diagnose the current story phase, determine what is missing, and route to the appropriate supporting module instead of jumping straight into prose.
+
+## Supporting modules
+
+- `story-suite/designing-stories.md`
+- `story-suite/creating-story-foundations.md`
+- `story-suite/building-storyworlds.md`
+- `story-suite/writing-story-scenes.md`
+- `story-suite/revising-stories.md`
+
+## Fallback
+
+- `MEGA-SKILL.md` is the fallback one-file version for simplified testing or deployment.
 
 ## Purpose
 
-The Writers Room Story Engine agent should not jump straight into prose when no story exists yet.
+The Writers Room Story Engine skill should not jump straight into prose when no story exists yet.
 
 It should work through stages:
 1. story foundation
@@ -12,7 +31,7 @@ It should work through stages:
 3. scene writing
 4. revision
 
-The boss agent should determine what exists, what is missing, and which skill should be used next.
+This skill should determine what exists, what is missing, and which supporting module should be used next.
 
 ## Required behavior
 
@@ -29,11 +48,11 @@ Before generating long-form output, determine:
 
 ### 2. Route to the correct skill
 Use:
-- `designing-stories.md` to orchestrate overall development
-- `creating-story-foundations.md` when nothing exists yet or the foundation is weak
-- `building-storyworlds.md` when the world needs to support story through pressure, values, conflict, and consequence
-- `writing-story-scenes.md` when beats exist and scenes should be drafted
-- `revising-stories.md` when a story, outline, or draft is weak
+- `story-suite/designing-stories.md` to orchestrate overall development
+- `story-suite/creating-story-foundations.md` when nothing exists yet or the foundation is weak
+- `story-suite/building-storyworlds.md` when the world needs to support story through pressure, values, conflict, and consequence
+- `story-suite/writing-story-scenes.md` when beats exist and scenes should be drafted
+- `story-suite/revising-stories.md` when a story, outline, or draft is weak
 
 ### 3. Preserve stage discipline
 Do not skip foundation work unless the user explicitly asks to skip it.
@@ -62,7 +81,7 @@ Do not jump into scene writing if:
 - the beats are still and-then shaped
 
 ### 4. Keep worldbuilding story-relevant
-Do not let the agent generate lore for its own sake.
+Do not let the skill generate lore for its own sake.
 
 World details must create:
 - pressure
@@ -76,7 +95,7 @@ Worldbuilding should be used when needed, not automatically overbuilt.
 If the story needs only light world support, keep it minimal.
 
 ### 5. Use stage outputs
-At each phase, the agent should produce outputs the next phase can use.
+At each phase, the skill should produce outputs the next phase can use.
 
 Example:
 - foundation creates premise, protagonist, ending direction, Story Spine, and beats
@@ -85,7 +104,7 @@ Example:
 - revision diagnoses weaknesses and repairs structure
 
 ### 6. Enforce story quality principles
-The boss agent should reject or flag outputs with:
+This skill should reject or flag outputs with:
 - passive protagonists
 - and-then plotting
 - weak stakes
@@ -105,13 +124,13 @@ When revising:
 
 ## Recommended default workflow
 
-1. Orchestrate with `designing-stories.md`
-2. Build with `creating-story-foundations.md`
-3. Support with `building-storyworlds.md` when needed
-4. Draft with `writing-story-scenes.md`
-5. Improve with `revising-stories.md`
+1. Orchestrate with `story-suite/designing-stories.md`
+2. Build with `story-suite/creating-story-foundations.md`
+3. Support with `story-suite/building-storyworlds.md` when needed
+4. Draft with `story-suite/writing-story-scenes.md`
+5. Improve with `story-suite/revising-stories.md`
 
-## Recommended boss-agent behavior
+## Recommended orchestration behavior
 
 ### When the user asks for a story from zero
 - do not immediately write the full story

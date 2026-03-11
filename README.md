@@ -32,38 +32,43 @@ It gives the model a structured workflow for:
 - drafting scenes that turn
 - diagnosing and repairing weak drafts
 
+## Primary entrypoint
+
+Primary skill entrypoint for registries and runners: `SKILL.md`
+
+Fallback one-file version for simplified testing or deployment: `MEGA-SKILL.md`
+
 ## Package structure
 
-```text
-writers-room-story-engine/
-├── README.md
-├── AGENT-BOSS-INSTRUCTIONS.md
-├── TEST-PROMPTS.md
-├── PACKAGE-DESCRIPTION.md
-├── SOURCES.md
-├── CHANGELOG.md
-├── CREATOR.md
-├── MEGA-SKILL.md
-├── prompts/
-│   ├── system-prompt-writers-room-story-engine.md
-│   └── workflow-order.md
-└── story-suite/
-    ├── designing-stories.md
-    ├── creating-story-foundations.md
-    ├── building-storyworlds.md
-    ├── writing-story-scenes.md
-    └── revising-stories.md
-```
+    writers-room-story-engine/
+    ├── README.md
+    ├── SKILL.md
+    ├── TEST-PROMPTS.md
+    ├── PACKAGE-DESCRIPTION.md
+    ├── SOURCES.md
+    ├── CHANGELOG.md
+    ├── CREATOR.md
+    ├── MEGA-SKILL.md
+    ├── prompts/
+    │   ├── system-prompt-writers-room-story-engine.md
+    │   └── workflow-order.md
+    └── story-suite/
+        ├── designing-stories.md
+        ├── creating-story-foundations.md
+        ├── building-storyworlds.md
+        ├── writing-story-scenes.md
+        └── revising-stories.md
 
 ## Core workflow
 
-1. Use `designing-stories.md` to orchestrate story development.
-2. Use `creating-story-foundations.md` to build premise, story core, protagonist, ending direction, and Story Spine.
-3. Use `building-storyworlds.md` when the world needs to create pressure, values, conflict, or consequence.
-4. Use `writing-story-scenes.md` to turn story beats into strong scenes.
-5. Use `revising-stories.md` to diagnose and repair what is weak.
+1. Use `SKILL.md` as the primary orchestration layer.
+2. Use `designing-stories.md` to diagnose the current stage and guide story development.
+3. Use `creating-story-foundations.md` to build premise, story core, protagonist, ending direction, and Story Spine.
+4. Use `building-storyworlds.md` when the world needs to create pressure, values, conflict, or consequence.
+5. Use `writing-story-scenes.md` to turn story beats into strong scenes.
+6. Use `revising-stories.md` to diagnose and repair what is weak.
 
-If you want a single-file fallback, use `MEGA-SKILL.md`.
+If you need a single-file fallback, use `MEGA-SKILL.md`.
 
 ## Included frameworks and principles
 
@@ -99,4 +104,6 @@ Use `TEST-PROMPTS.md` to test:
 
 This package is built to support both:
 - modular orchestration across multiple focused skills
-- simplified deployment through a one-file mega-skill
+- simplified fallback deployment through `MEGA-SKILL.md`
+
+For registry submission and standard skill runners, `SKILL.md` should be treated as the main entrypoint.

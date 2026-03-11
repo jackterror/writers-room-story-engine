@@ -2,6 +2,22 @@
 
 All notable changes to Writers Room Story Engine will be documented in this file.
 
+## v1.0.1
+
+Packaging and registry-entry update.
+
+### Added
+- `SKILL.md` as the primary skill entrypoint for registries and runners
+
+### Changed
+- repositioned the package around orchestration-first architecture
+- designated `MEGA-SKILL.md` as the fallback one-file version
+- updated `README.md` to reflect `SKILL.md` as the main entrypoint
+- simplified the public package structure for cleaner registry submission and GitHub presentation
+
+### Removed
+- `AGENT-BOSS-INSTRUCTIONS.md` as a redundant top-level entrypoint after moving orchestration into `SKILL.md`
+
 ## v1.0.0
 
 Initial release of the Writers Room Story Engine package.
