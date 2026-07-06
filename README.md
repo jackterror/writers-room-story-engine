@@ -100,6 +100,28 @@ Use `TEST-PROMPTS.md` to test:
 - scene drafting quality
 - story-world support quality
 
+## Agent Skill installation
+
+The repository root follows the [Agent Skills specification](https://agentskills.io/specification).
+
+Claude Code:
+
+```
+ln -s /absolute/path/writers-room-story-engine ~/.claude/skills/writers-room-story-engine
+```
+
+OpenAI Codex:
+
+```
+ln -s /absolute/path/writers-room-story-engine ~/.codex/skills/writers-room-story-engine
+```
+
+Then ask:
+
+```
+Use $writers-room-story-engine to diagnose where my story is in development and route me to the right next step.
+```
+
 ## Notes
 
 This package is built to support both:
@@ -107,3 +129,9 @@ This package is built to support both:
 - simplified fallback deployment through `MEGA-SKILL.md`
 
 For registry submission and standard skill runners, `SKILL.md` should be treated as the main entrypoint.
+
+## Creator and license
+
+Created by [Jack Dalrymple](https://www.jackdalrymple.com/), Founder of [Cap & Cut](https://capandcut.com/). See [CREATOR.md](CREATOR.md).
+
+Released under the MIT License. See [LICENSE](LICENSE).
