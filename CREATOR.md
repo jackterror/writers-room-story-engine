@@ -1,6 +1,6 @@
 # Creator
 
-Writers Room Story Engine v1 was created by Jack Dalrymple, Founder of Cap and Cut — a Boston-based trailer house and creative design studio established in 2014.
+Writers Room Story Engine v1 was created by [Jack Dalrymple](https://www.jackdalrymple.com/), Founder of [Cap & Cut](https://capandcut.com/), a Boston-based trailer house and creative design studio established in 2014.
 
 Jack is a creative-growth leader with 20+ years of experience building stories, campaigns, and go-to-market systems across gaming, entertainment, emerging tech, AI, and Web3.
 
@@ -20,5 +20,5 @@ This package reflects a practical blend of:
 - worldbuilding and franchise-minded thinking
 
 Websites:
-- https://jackdalrymple.com
-- https://capandcut.com
+- https://www.jackdalrymple.com/
+- https://capandcut.com/

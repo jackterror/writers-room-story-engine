@@ -2,7 +2,7 @@
 
 Writers Room Story Engine is a modular story-development package designed to help an agent generate, structure, draft, and revise compelling standalone stories.
 
-This package synthesizes story development across Foundation, Character, Structure, Scene Logic, and Revision — drawing on the Pixar 22 Rules, Story Spine, Star Wars-style character-arc design, Hero’s Journey analysis, South Park’s therefore/but causality, and agent skill design best practices.
+This package synthesizes story development across Foundation, Character, Structure, Scene Logic, and Revision. It draws on the Pixar 22 Rules, Story Spine, Star Wars-style character-arc design, Hero’s Journey analysis, South Park’s therefore/but causality, and agent skill design best practices.
 
 It is intended for:
 - short fiction
